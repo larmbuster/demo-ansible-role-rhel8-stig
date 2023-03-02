@@ -1,0 +1,9 @@
+---
+- name: STIG a RHEL 8 Server
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Include demo-ansible-role-rhel8-stig role
+      ansible.builtin.include_role:
+        name: demo-ansible-role-rhel8-stig
